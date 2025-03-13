@@ -5,26 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Cueva del Pirata</title>
+  <link rel="stylesheet" href="../css/styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white text-gray-800 font-sans">
+<body class="body">
 
+  <!-- Header -->
   <header class="bg-red-800 text-white px-10 py-4 flex justify-between items-center">
-
     <!-- Logo -->
     <div class="flex items-center">
-      <img src="../img/logo.webp" alt="Logo La Cueva del Pirata" class="h-20 rounded-lg shadow-md" />
+      <a href="../html/index.html">
+        <img src="../img/logo.webp" alt="Logo La Cueva del Pirata" class="h-20 rounded-lg shadow-md" />
+      </a>
     </div>
-
     <!-- Menú de navegación -->
     <nav class="flex space-x-8 text-base">
-      <a href="../html/index.html" class="hover:underline">Inicio</a>
-      <a href="../html/cocteles.html" class="underline underline-offset-4">Cócteles</a>
+      <a href="../html/index.html" class="underline underline-offset-4">Inicio</a>
+      <a href="../html/cocteles.html" class="hover:underline">Cócteles</a>
       <a href="../html/contacto.html" class="hover:underline">Contacto</a>
       <a href="../html/resenhas.html" class="hover:underline">Reseñas</a>
     </nav>
-
   </header>
 
 
@@ -279,7 +280,7 @@
 
       function updateSlide() {
         const percentage = -(currentSlide * 100);
-        track.style.transform = translateX(${ percentage } %);
+        rack.style.transform = `translateX(${percentage}%)`;
 
         indicators.forEach((indicator, index) => {
           if (index === currentSlide) {
