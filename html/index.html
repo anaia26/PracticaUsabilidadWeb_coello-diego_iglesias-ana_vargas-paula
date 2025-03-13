@@ -19,19 +19,18 @@
       
         <!-- Menú de navegación -->
         <nav class="flex space-x-8 text-base">
-          <a href="../html/index.html" class="underline underline-offset-4">Inicio</a>
-        <a href="../html/cocteles.html" class="hover:underline">Cócteles</a>
-        <a href="../html/contacto.html" class="hover:underline">Contacto</a>
-        <a href="../html/resenhas.html" class="hover:underline">Reseñas</a>
+          <a href="../html/index.html" class="hover:underline">Inicio</a>
+          <a href="../html/cocteles.html" class="underline underline-offset-4">Cócteles</a>
+          <a href="../html/contacto.html" class="hover:underline">Contacto</a>
+          <a href="../html/resenhas.html" class="hover:underline">Reseñas</a>
         </nav>
-      
+
       </header>
       
 
       <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <section class="flex flex-col lg:flex-row items-center justify-between gap-12">
       
-          <!-- Texto a la izquierda -->
           <div class="flex-1 text-center lg:text-left space-y-6">
             <h2 class="text-xl font-semibold">
               Bienvenidos a La Cueva del Pirata – un rincón único en Sada, A Coruña, donde la magia de la coctelería se fusiona con el espíritu aventurero de los mares.
@@ -45,13 +44,11 @@
               Ya sea que busques un clásico bien ejecutado o una creación innovadora, en La Cueva del Pirata encontrarás el cóctel perfecto para cada ocasión. ¡Ven a navegar entre aromas y sabores exquisitos!
             </p>
       
-            <!-- Botón -->
-            <a href="#cocteles" class="inline-block bg-red-800 text-white font-semibold px-6 py-3 rounded-md hover:bg-red-900 transition">
+            <a href="../HTML/cocteles.html" class="inline-block bg-red-800 text-white font-semibold px-6 py-3 rounded-md hover:bg-red-900 transition">
               Ver cócteles
             </a>
           </div>
       
-          <!-- Imagen a la derecha -->
           <div class="flex-1">
             <img src="../img/imagen-home.webp" alt="Cueva del Pirata" class="w-full max-w-md mx-auto rounded-lg shadow-md">
           </div>
@@ -62,7 +59,7 @@
 
           <!-- Título del carrusel (Barra de color rojo pegada al borde) -->
           <h2 class="text-center text-xl font-bold text-white bg-red-800 py-3">
-            Fotos del Local
+            Fotos del local
           </h2>
         
           <!-- Contenido con padding -->
@@ -100,23 +97,41 @@
             </div>
           </div>
         
-          <!-- Botón Anterior -->
-          <button id="prevBtn" aria-label="Anterior"
-            class="absolute left-[-5rem] top-1/2 transform -translate-y-1/2 bg-red-300 hover:bg-red-400 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg z-10">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-        
-          <!-- Botón Siguiente -->
-          <button id="nextBtn" aria-label="Siguiente"
-            class="absolute right-[-3rem] top-1/2 transform -translate-y-1/2 translate-x-1/2 bg-red-300 hover:bg-red-400 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg z-10">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        
-        </div>
+         <!-- Botón Anterior -->
+         <button id="prevBtn" aria-label="Anterior"
+         class="absolute left-[-5rem] top-1/2 transform -translate-y-1/2 bg-red-300 hover:bg-red-400 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg z-10 ">
+         <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+         </svg>
+       </button>
+     
+       <!-- Botón Siguiente -->
+       <button id="nextBtn" aria-label="Siguiente"
+         class="absolute right-[-3rem] top-1/2 transform -translate-y-1/2 translate-x-1/2 bg-red-300 hover:bg-red-400 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg z-10">
+         <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+         </svg>
+       </button>
+
+
+        <!-- BOTONES MÓVILES - DEBAJO DEL CARROUSEL -->
+    <div class="flex justify-center gap-4 mt-4 md:hidden">
+      <button id="prevBtnMobile"
+        class="bg-red-300 hover:bg-red-400 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
+        aria-label="Anterior">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <button id="nextBtnMobile"
+        class="bg-red-300 hover:bg-red-400 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
+        aria-label="Siguiente">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
         
       
 </main>
@@ -235,49 +250,51 @@
   </footer>
 
   <script>
-    const track = document.getElementById('carouselTrack');
-    const indicators = [
-      document.getElementById('indicator-0'),
-      document.getElementById('indicator-1'),
-    ];
-  
-    const totalSlides = 2;
-    let currentIndex = 0;
-  
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-  
-    function updateCarousel() {
-      const translateX = -(currentIndex * 100);
-      track.style.transform = `translateX(${translateX}%)`;
-      updateIndicators();
-    }
-  
-    function updateIndicators() {
-      indicators.forEach((indicator, index) => {
-        if (index === currentIndex) {
-          indicator.classList.remove('bg-gray-300');
-          indicator.classList.add('bg-red-800');
-        } else {
-          indicator.classList.remove('bg-red-800');
-          indicator.classList.add('bg-gray-300');
-        }
-      });
-    }
-  
-    prevBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-      updateCarousel();
+    document.addEventListener('DOMContentLoaded', function () {
+  const track = document.getElementById('carouselTrack');
+  const prevBtns = [document.getElementById('prevBtn'), document.getElementById('prevBtnMobile')];
+  const nextBtns = [document.getElementById('nextBtn'), document.getElementById('nextBtnMobile')];
+  const indicators = [
+    document.getElementById('indicator-0'),
+    document.getElementById('indicator-1')
+  ];
+
+  let currentSlide = 0;
+  const totalSlides = indicators.length;
+
+  function updateSlide() {
+    const percentage = -(currentSlide * 100);
+    track.style.transform = translateX(${percentage}%);
+
+    indicators.forEach((indicator, index) => {
+      if (index === currentSlide) {
+        indicator.classList.remove('bg-gray-300');
+        indicator.classList.add('bg-red-800');
+      } else {
+        indicator.classList.remove('bg-red-800');
+        indicator.classList.add('bg-gray-300');
+      }
     });
-  
-    nextBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      updateCarousel();
-    });
-  
-    updateCarousel();
+  }
+
+  function goToPrev() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlide();
+  }
+
+  function goToNext() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlide();
+  }
+
+  // Añadimos listeners a todos los botones prev/next
+  prevBtns.forEach(btn => btn?.addEventListener('click', goToPrev));
+  nextBtns.forEach(btn => btn?.addEventListener('click', goToNext));
+
+  updateSlide();
+});
+
   </script>
-  
   
 
 
