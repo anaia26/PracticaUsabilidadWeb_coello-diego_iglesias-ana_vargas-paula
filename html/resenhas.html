@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valora tu experiencia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-white">
+    <!-- Header ya lo tienes, así que lo dejamos como está -->
+    <header class="bg-red-800 text-white px-10 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="../img/logo.webp" alt="Logo La Cueva del Pirata" class="h-20 rounded-lg shadow-md">
+      </div>
+      <nav class="flex space-x-8 text-base">
+        <a href="../html/index.html" class="hover:underline">Inicio</a>
+        <a href="../html/cocteles.html" class="hover:underline">Cócteles</a>
+        <a href="../html/contacto.html" class="hover:underline">Contacto</a>
+        <a href="../html/resenhas.html" class="underline underline-offset-4">Reseñas</a>
+      </nav>
+    </header>
+  
+    
+    <!-- MAIN CONTENEDOR DEL FORMULARIO -->
+<main class="flex flex-col justify-center items-center py-10 px-4">
+  <div class="w-full max-w-4xl">
+    <!-- TÍTULO -->
+    <h1 class="text-center text-2xl font-semibold mb-10">
+      VALORA TU EXPERIENCIA
+    </h1>
+
+    <!-- INPUT NOMBRE + ESTRELLAS -->
+    <div class="flex flex-col md:flex-row items-start items-center md:justify-center mb-6 space-y-4 md:space-y-0 md:space-x-6">
+      <!-- INPUT NOMBRE -->
+      <input
+        type="text"
+        placeholder="Nombre ..."
+        class="border-2 border-red-800 rounded-md px-4 py-3 w-full md:w-[400px] focus:outline-none focus:ring-2 focus:ring-red-800 ml-8"
+      />
+      
+
+
+      <!-- ESTRELLAS -->
+      <div class="flex justify-center md:justify-start text-red-800 space-x-2">
+        <!-- 5 ESTRELLAS -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l2.062 6.354a1 1 0 00.95.69h6.708c.969 0 1.371 1.24.588 1.81l-5.429 3.946a1 1 0 00-.364 1.118l2.062 6.354c.3.921-.755 1.688-1.54 1.118l-5.429-3.946a1 1 0 00-1.176 0l-5.429 3.946c-.784.57-1.838-.197-1.54-1.118l2.062-6.354a1 1 0 00-.364-1.118L2.21 11.781c-.783-.57-.38-1.81.588-1.81h6.708a1 1 0 00.95-.69l2.062-6.354z" />
+        </svg>
+        <!-- Copia este bloque 4 veces más -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l2.062 6.354a1 1 0 00.95.69h6.708c.969 0 1.371 1.24.588 1.81l-5.429 3.946a1 1 0 00-.364 1.118l2.062 6.354c.3.921-.755 1.688-1.54 1.118l-5.429-3.946a1 1 0 00-1.176 0l-5.429 3.946c-.784.57-1.838-.197-1.54-1.118l2.062-6.354a1 1 0 00-.364-1.118L2.21 11.781c-.783-.57-.38-1.81.588-1.81h6.708a1 1 0 00.95-.69l2.062-6.354z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l2.062 6.354a1 1 0 00.95.69h6.708c.969 0 1.371 1.24.588 1.81l-5.429 3.946a1 1 0 00-.364 1.118l2.062 6.354c.3.921-.755 1.688-1.54 1.118l-5.429-3.946a1 1 0 00-1.176 0l-5.429 3.946c-.784.57-1.838-.197-1.54-1.118l2.062-6.354a1 1 0 00-.364-1.118L2.21 11.781c-.783-.57-.38-1.81.588-1.81h6.708a1 1 0 00.95-.69l2.062-6.354z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l2.062 6.354a1 1 0 00.95.69h6.708c.969 0 1.371 1.24.588 1.81l-5.429 3.946a1 1 0 00-.364 1.118l2.062 6.354c.3.921-.755 1.688-1.54 1.118l-5.429-3.946a1 1 0 00-1.176 0l-5.429 3.946c-.784.57-1.838-.197-1.54-1.118l2.062-6.354a1 1 0 00-.364-1.118L2.21 11.781c-.783-.57-.38-1.81.588-1.81h6.708a1 1 0 00.95-.69l2.062-6.354z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l2.062 6.354a1 1 0 00.95.69h6.708c.969 0 1.371 1.24.588 1.81l-5.429 3.946a1 1 0 00-.364 1.118l2.062 6.354c.3.921-.755 1.688-1.54 1.118l-5.429-3.946a1 1 0 00-1.176 0l-5.429 3.946c-.784.57-1.838-.197-1.54-1.118l2.062-6.354a1 1 0 00-.364-1.118L2.21 11.781c-.783-.57-.38-1.81.588-1.81h6.708a1 1 0 00.95-.69l2.062-6.354z" />
+        </svg>
+        
+        <!-- Repite hasta tener 5 -->
+      </div>
+    </div>
+
+    <!-- TEXTAREA + BOTONES -->
+    <div class="flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+      <!-- TEXTAREA -->
+      <textarea
+        placeholder="Escribe aquí tu valoración ..."
+        class="border-2 border-red-800 rounded-md px-4 py-3 w-full md:w-[600px] h-[120px] focus:outline-none focus:ring-2 focus:ring-red-800"
+      ></textarea>
+
+      <!-- BOTONES -->
+      <div class="flex flex-col space-y-4 w-full md:w-auto items-center md:items-start">
+        <button
+          class="border-2 border-red-800 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-800 w-[150px]"
+        >
+          Subir imagen
+        </button>
+
+        <button
+          class="bg-red-800 text-white px-4 py-2 rounded-md hover:bg-red-900 transition w-[150px]"
+        >
+          Enviar
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <h2 class="text-center text-2xl  mt-10 mb-8">RESEÑAS</h2>
+
+  <!-- Contenedor general de reseñas -->
+<div class="flex flex-col items-center w-full max-w-4xl space-y-10">
+
+  <div class="bg-red-800 text-white rounded-xl p-6 w-full max-w-4xl space-y-6">
+    <div class="flex md:items-start md:space-x-6 flex-col md:flex-row space-y-4 md:space-y-0">
+      
+      <!-- Imagen de perfil -->
+      <img src="https://via.placeholder.com/80x80" alt="Paula Vargas" class="w-20 h-20 rounded-lg bg-white object-cover">
+  
+      <!-- Contenido derecho -->
+      <div class="flex flex-col w-full space-y-4">
+  
+        <!-- Nombre + Reseñas + Estrellas + Fecha -->
+        <div class="flex flex-col space-y-2">
+          <h3 class="text-lg font-semibold">Paula Vargas</h3>
+          
+          <div class="flex items-center space-x-6">
+            <p class="text-sm text-red-200">4 reseñas</p>
+  
+            <div class="flex space-x-1">
+              <span class="text-lg">★</span>
+              <span class="text-lg">★</span>
+              <span class="text-lg">★</span>
+              <span class="text-lg">★</span>
+              <span class="text-lg">★</span>
+            </div>
+  
+            <p class="text-sm text-red-200">Hace 2 meses</p>
+          </div>
+        </div>
+  
+        <!-- Caja de reseña -->
+        <div class="bg-white text-black rounded-lg p-4 text-sm leading-relaxed w-full">
+          ✨ Increíble página para amantes de la coctelería! 🍸 Diseño atractivo, navegación intuitiva y una gran variedad de recetas bien explicadas. Perfecta para descubrir y preparar cócteles fácilmente. ¡Totalmente recomendada! 🍹✨
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="bg-red-800 text-white rounded-xl p-6 w-full max-w-4xl space-y-6">
+    <div class="flex md:items-start md:space-x-6 flex-col md:flex-row space-y-4 md:space-y-0">
+      
+      <!-- Imagen de perfil -->
+      <img src="https://via.placeholder.com/80x80" alt="Ana Iglesias" class="w-20 h-20 rounded-lg bg-white object-cover">
+  
+      <!-- Contenido derecho -->
+      <div class="flex flex-col w-full space-y-4">
+  
+        <!-- Nombre + Reseñas + Estrellas + Fecha -->
+        <div class="flex flex-col space-y-2">
+          <h3 class="text-lg font-semibold">Ana Iglesias</h3>
+          
+          <div class="flex items-center space-x-6">
+            <p class="text-sm text-red-200">3 reseñas</p>
+  
+            <div class="flex space-x-1">
+              <span class="text-lg">★</span>
+              <span class="text-lg">★</span>
+              <span class="text-lg">★</span>
+            </div>
+  
+            <p class="text-sm text-red-200">Hace 1 mes</p>
+          </div>
+        </div>
+  
+        <!-- Caja de reseña -->
+        <div class="bg-white text-black rounded-lg p-4 text-sm leading-relaxed w-full">
+          ✨ Si buscas una experiencia única, esta coctelería es un lugar imprescindible. Me encantó la creatividad de sus cócteles, cada uno con una presentación impecable y sabores perfectamente equilibrados. 🥂✨
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="bg-red-800 text-white rounded-xl p-6 w-full max-w-4xl space-y-6">
+    <!-- Contenedor principal: avatar + contenido -->
+    <div class="flex md:items-start md:space-x-6 flex-col md:flex-row space-y-4 md:space-y-0">
+      
+      <!-- Imagen de perfil -->
+      <img src="https://via.placeholder.com/80x80" alt="Diego Coello" class="w-20 h-20 rounded-lg bg-white object-cover">
+  
+      <!-- Contenedor derecho: nombre + reseñas + estrellas + fecha + comentario -->
+      <div class="flex flex-col w-full space-y-4">
+  
+        <!-- NOMBRE + RESEÑAS + ESTRELLAS + FECHA EN UNA SOLA FILA -->
+        <div class="flex flex-col space-y-2">
+          
+          <!-- Nombre -->
+          <h3 class="text-lg font-semibold">Diego Coello</h3>
+  
+          <!-- Reseñas + Estrellas + Fecha en horizontal -->
+          <div class="flex items-center space-x-6">
+            
+            <!-- Cantidad de reseñas -->
+            <p class="text-sm text-red-200">2 reseñas</p>
+  
+            <!-- Estrellas -->
+            <div class="flex space-x-1">
+              <span class="text-lg">★</span>
+              <span class="text-lg">★</span>
+              <span class="text-lg">★</span>
+              <span class="text-lg">★</span>
+              <span class="text-lg">★</span>
+            </div>
+  
+            <!-- Fecha -->
+            <p class="text-sm text-red-200">Hace 2 meses</p>
+  
+          </div>
+        </div>
+  
+        <!-- Caja de reseña -->
+        <div class="bg-white text-black rounded-lg p-4 text-sm leading-relaxed w-full">
+          ✨ Una coctelería espectacular. Los cócteles son creativos y deliciosos, con una presentación impecable. El ambiente es acogedor y el servicio, de primera. Sin duda, un lugar al que volveré. 🍸✨
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <div class="bg-red-800 text-white rounded-xl p-6 w-full max-w-4xl space-y-4">
+    <!-- Perfil + Nombre -->
+    <div class="flex items-center space-x-4">
+      <!-- Imagen de perfil -->
+      <img src="https://via.placeholder.com/80x80" alt="Mónica Pérez" class="w-20 h-20 rounded-lg bg-white object-cover">
+  
+      <!-- Nombre y Reseñas -->
+      <div class="flex flex-col justify-center">
+        <h3 class="text-lg font-semibold">Mónica Pérez</h3>
+        <p class="text-sm text-red-200">3 reseñas</p>
+  
+        <!-- Estrellas + Fecha -->
+        <div class="flex items-center space-x-4 mt-2">
+          <!-- Estrellas -->
+          <div class="flex space-x-1 text-white">
+            <!-- Aquí usamos unicode, si prefieres SVG dímelo -->
+            <span class="text-lg">★</span>
+            <span class="text-lg">★</span>
+            <span class="text-lg">★</span>
+            <span class="text-lg">★</span>
+            <span class="text-lg">★</span>
+          </div>
+  
+          <!-- Fecha -->
+          <p class="text-sm text-red-200">Hace 3 meses</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Imagen adicional + Comentario -->
+    <div class="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
+      <!-- Imagen adicional -->
+      <img src="https://via.placeholder.com/150x100" alt="Cóctel" class="w-full md:w-[150px] h-auto rounded-lg object-cover">
+  
+      <!-- Contenido de la reseña -->
+      <div class="bg-white text-black rounded-lg p-4 text-sm leading-relaxed w-full">
+        ✨ Una coctelería increíble con una propuesta de bebidas innovadora y de gran calidad. Los cócteles están perfectamente equilibrados, con presentaciones elegantes y sabores sorprendentes. 🍸✨
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+
+<div class="flex justify-center items-center space-x-4 text-red-800 text-lg mt-8">
+  
+  <!-- Página anterior -->
+  <button class="hover:underline flex items-center space-x-1">
+    <span>&lt;</span>
+    <span>Página anterior</span>
+  </button>
+
+  <!-- Números de páginas -->
+  <div class="flex items-center space-x-3">
+    <!-- Página activa -->
+    <button class="border-2 border-black px-2 py-1 rounded">
+      1
+    </button>
+
+    <!-- Páginas normales -->
+    <button class="hover:underline">2</button>
+    <button class="hover:underline">3</button>
+    <button class="hover:underline">4</button>
+  </div>
+
+  <!-- Página siguiente -->
+  <button class="hover:underline flex items-center space-x-1">
+    <span>Página siguiente</span>
+    <span>&gt;</span>
+  </button>
+
+</div>
+</main>
+<footer class="bg-red-800 text-white py-10 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-x-16 gap-y-10">
+
+    <!-- Columna 1: Información de la empresa -->
+    <div>
+      <h4 class="text-white font-bold text-lg mb-4">La Cueva del Pirata</h4>
+      <p class="mb-3">Enfocada en variedad de cócteles.</p>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a href="tel:678950467" class="flex items-center hover:underline focus:outline-none focus:ring-2 focus:ring-white" aria-label="Llamar al 678950467">
+            📱 <span class="ml-2">678950467</span>
+          </a>
+        </li>
+        <li>
+          <a href="tel:981627209" class="flex items-center hover:underline focus:outline-none focus:ring-2 focus:ring-white" aria-label="Llamar al 981627209">
+            ☎ <span class="ml-2">981627209</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:info@lacuevadelpirata.com" class="flex items-center hover:underline focus:outline-none focus:ring-2 focus:ring-white" aria-label="Enviar correo a info@lacuevadelpirata.com">
+            ✉ <span class="ml-2">info@lacuevadelpirata.com</span>
+          </a>
+        </li>
+        <li>
+          <p class="flex items-center">
+            📍 <span class="ml-2">Sada, A Coruña, España</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Columna 2: Redes Sociales -->
+    <div>
+      <h4 class="text-white font-bold text-lg mb-4">Síguenos</h4>
+
+      <div class="flex space-x-4">
+<!-- Facebook -->
+<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+   class="bg-black text-white hover:bg-white hover:text-black transition rounded-full p-3 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-white"
+   aria-label="Visítanos en Facebook">
+  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M22.675 0h-21.35C.595 0 0 .593 0 1.326v21.348C0 23.407.595 24 1.325 24h11.498v-9.294H9.689V11.17h3.134V8.413c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.535h-3.12V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.405 0 22.675 0z" />
+  </svg>
+</a>
+
+<!-- X / Twitter -->
+<a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
+   class="bg-black text-white hover:bg-white hover:text-black transition rounded-full p-3 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-white"
+   aria-label="Visítanos en X (antes Twitter)">
+  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M4.75 3h4.36l3.46 5.11L16.45 3H21l-6.87 9.91L21 21h-4.36l-3.69-5.43L8 21H3l7.17-10.31L4.75 3z"/>
+  </svg>
+</a>
+
+<!-- Instagram -->
+<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+   class="bg-black text-white hover:bg-white hover:text-black transition rounded-full p-3 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-white"
+   aria-label="Visítanos en Instagram">
+  <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+  </svg>
+</a>
+
+<!-- TikTok -->
+<a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer"
+   class="bg-black text-white hover:bg-white hover:text-black transition rounded-full p-3 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-white"
+   aria-label="Visítanos en TikTok">
+  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M9 3v12.5a3.5 3.5 0 1 1-3.5-3.5c.2 0 .5 0 .7.1V9.1c-.3 0-.7-.1-1-.1a6 6 0 1 0 6 6V8.7a8.2 8.2 0 0 0 4.5 1.3V6.4c-.7 0-1.4-.2-2-.5A3.6 3.6 0 0 1 12.5 3H9z"/>
+  </svg>
+</a>
+</div>
+
+    </div>
+
+    <!-- Columna 3: Menú -->
+    <div>
+      <h4 class="text-white font-bold text-lg mb-4">Menú</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Inicio</a></li>
+        <li><a href="#" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Cócteles</a></li>
+        <li><a href="#" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Contacto</a></li>
+        <li><a href="#" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Reseñas</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 4: Cócteles -->
+    <div>
+      <h4 class="text-white font-bold text-lg mb-4">Cócteles</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Clásicos infalibles</a></li>
+        <li><a href="#" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Cócteles malditos</a></li>
+        <li><a href="#" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Creaciones originales</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Divider -->
+  <div class="border-t border-white mt-12 mb-6 w-[300px] mx-auto"></div>
+
+  <!-- Footer Bottom -->
+  <div class="text-center text-sm space-y-2 font-bold">
+    <p>2025 © LaCuevaDelPirata. Todos los derechos reservados</p>
+    <div class="flex justify-center space-x-6">
+      <a href="#" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Términos de uso</a>
+      <a href="#" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Política de privacidad</a>
+    </div>
+  </div>
+</footer>
+  </body>
+  
+</html>
