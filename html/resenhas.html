@@ -40,8 +40,6 @@
         <!-- INPUT NOMBRE -->
         <input type="text" placeholder="Nombre ..."
           class="border-2 border-red-800 rounded-md px-4 py-3 w-full md:w-[400px] focus:outline-none focus:ring-2 focus:ring-red-800 " />
-
-
         <!-- ESTRELLAS -->
         <div class="flex justify-center md:justify-start text-red-800 space-x-2">
           <!-- 5 ESTRELLAS -->
@@ -88,14 +86,14 @@
         <div class="flex flex-col space-y-4 w-full md:w-auto items-center md:items-start">
           <!-- Label con estilos de botón -->
           <label for="file-upload"
-            class="border-2 border-red-800 text-red-800 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-800 w-[150px] text-center cursor-pointer hover:bg-red-100 transition">
+            class="border-2 border-red-800 text-red-800 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-800 w-[150px] text-center cursor-pointer hover:bg-red-100 transition mb-4">
             Subir imagen
           </label>
 
           <!-- Input file oculto -->
           <input id="file-upload" type="file" class="hidden" />
 
-          <button class="bg-red-800 text-white px-4 py-2 rounded-md hover:bg-red-900 transition w-[150px]">
+          <button class="bg-red-800 text-white px-4 py-2 rounded-md hover:bg-red-900 transition w-[150px] ">
             Enviar
           </button>
         </div>
@@ -107,128 +105,184 @@
     <!-- Contenedor general de reseñas -->
     <div class="flex flex-col items-center w-full max-w-4xl space-y-10">
 
-      <div class="bg-red-800 text-white rounded-xl p-6 w-full max-w-4xl space-y-6">
-        <div class="flex md:items-start md:space-x-6 flex-col md:flex-row space-y-4 md:space-y-0">
-
-          <!-- Imagen de perfil -->
-          <img src="../img/mujer_Avatar.webp" alt="Paula Vargas" class="w-20 h-20 rounded-lg bg-white object-cover">
-
-          <!-- Contenido derecho -->
-          <div class="flex flex-col w-full space-y-4">
-
-            <!-- Nombre + Reseñas + Estrellas + Fecha -->
-            <div class="flex flex-col space-y-2">
-              <h3 class="text-lg font-semibold">Paula Vargas</h3>
-
-              <div class="flex items-center space-x-6">
-                <p class="text-sm text-red-200">4 reseñas</p>
-
-                <div class="flex space-x-1">
-                  <span class="text-lg">★</span>
-                  <span class="text-lg">★</span>
-                  <span class="text-lg">★</span>
-                  <span class="text-lg">★</span>
-                  <span class="text-lg">★</span>
-                </div>
-
-                <p class="text-sm text-red-200">Hace 2 meses</p>
-              </div>
-            </div>
-
-            <!-- Caja de reseña -->
-            <div class="bg-white text-black rounded-lg p-4 text-sm leading-relaxed w-full">
-              ✨ Increíble página para amantes de la coctelería! 🍸 Diseño atractivo, navegación intuitiva y una gran
-              variedad de recetas bien explicadas. Perfecta para descubrir y preparar cócteles fácilmente. ¡Totalmente
-              recomendada! 🍹✨
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="bg-red-800 text-white rounded-xl p-6 w-full max-w-4xl space-y-6">
-        <div class="flex md:items-start md:space-x-6 flex-col md:flex-row space-y-4 md:space-y-0">
-
-          <!-- Imagen de perfil -->
-          <img src="../img/mujer_Avatar.webp" alt="Ana Iglesias" class="w-20 h-20 rounded-lg bg-white object-cover">
-
-          <!-- Contenido derecho -->
-          <div class="flex flex-col w-full space-y-4">
-
-            <!-- Nombre + Reseñas + Estrellas + Fecha -->
-            <div class="flex flex-col space-y-2">
-              <h3 class="text-lg font-semibold">Ana Iglesias</h3>
-
-              <div class="flex items-center space-x-6">
-                <p class="text-sm text-red-200">3 reseñas</p>
-
-                <div class="flex space-x-1">
-                  <span class="text-lg">★</span>
-                  <span class="text-lg">★</span>
-                  <span class="text-lg">★</span>
-                </div>
-
-                <p class="text-sm text-red-200">Hace 1 mes</p>
-              </div>
-            </div>
-
-            <!-- Caja de reseña -->
-            <div class="bg-white text-black rounded-lg p-4 text-sm leading-relaxed w-full">
-              ✨ Si buscas una experiencia única, esta coctelería es un lugar imprescindible. Me encantó la creatividad
-              de sus cócteles, cada uno con una presentación impecable y sabores perfectamente equilibrados. 🥂✨
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="bg-red-800 text-white rounded-xl p-6 w-full max-w-4xl space-y-6">
+      <div class="bg-red-800 text-white rounded-xl p-6 w-full max-w-4xl space-y-4">
         <!-- Contenedor principal: avatar + contenido -->
         <div class="flex md:items-start md:space-x-6 flex-col md:flex-row space-y-4 md:space-y-0">
-
+      
           <!-- Imagen de perfil -->
-          <img src="../img/hombre_Avatar.webp" alt="Diego Coello" class="w-20 h-20 rounded-lg bg-white object-cover">
-
-          <!-- Contenedor derecho: nombre + reseñas + estrellas + fecha + comentario -->
+          <img src="../img/hombre_Avatar.webp" alt="Diego Coello"
+            class="w-20 h-20 rounded-lg bg-white object-cover">
+      
+          <!-- Contenedor derecho -->
           <div class="flex flex-col w-full space-y-4">
-
-            <!-- NOMBRE + RESEÑAS + ESTRELLAS + FECHA EN UNA SOLA FILA -->
-            <div class="flex flex-col space-y-2">
-
-              <!-- Nombre -->
-              <h3 class="text-lg font-semibold">Diego Coello</h3>
-
-              <!-- Reseñas + Estrellas + Fecha en horizontal -->
-              <div class="flex items-center space-x-6">
-
-                <!-- Cantidad de reseñas -->
-                <p class="text-sm text-red-200">2 reseñas</p>
-
-                <!-- Estrellas -->
-                <div class="flex space-x-1">
-                  <span class="text-lg">★</span>
-                  <span class="text-lg">★</span>
-                  <span class="text-lg">★</span>
-                  <span class="text-lg">★</span>
-                  <span class="text-lg">★</span>
-                </div>
-
-                <!-- Fecha -->
-                <p class="text-sm text-red-200">Hace 2 meses</p>
-
+      
+            <!-- Nombre -->
+            <h3 class="text-lg font-semibold">Paula Vargas</h3>
+      
+            <!-- Número de reseñas -->
+            <p class="text-sm text-red-200">4 reseñas</p>
+      
+            <!-- Estrellas + Fecha -->
+            <div class="flex items-center space-x-4 mt-2 ">
+              <!-- Estrellas -->
+              <div class="flex space-x-1 text-white ">
+                <!-- Estrellas SVG rellenas -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
               </div>
+      
+              <!-- Fecha -->
+              <p class="text-sm text-red-200">Hace 2 meses</p>
             </div>
-
+      
             <!-- Caja de reseña -->
-            <div class="bg-white text-black rounded-lg p-4 text-sm leading-relaxed w-full">
-              ✨ Una coctelería espectacular. Los cócteles son creativos y deliciosos, con una presentación impecable. El
-              ambiente es acogedor y el servicio, de primera. Sin duda, un lugar al que volveré. 🍸✨
+            <div class="bg-white text-black rounded-lg p-4 text-sm leading-relaxed w-full md:w-[625px]">
+                Increíble página para amantes de la coctelería! 🍸
+                Diseño atractivo, navegación intuitiva y una gran variedad de recetas bien explicadas.Perfecta para descubrir y preparar cócteles fácilmente.
+                ¡Totalmente recomendada! 🍹✨
             </div>
-
           </div>
         </div>
       </div>
+
+
       <div class="bg-red-800 text-white rounded-xl p-6 w-full max-w-4xl space-y-4">
+        <!-- Contenedor principal: avatar + contenido -->
+        <div class="flex md:items-start md:space-x-6 flex-col md:flex-row space-y-4 md:space-y-0">
+      
+          <!-- Imagen de perfil -->
+          <img src="../img/hombre_Avatar.webp" alt="Diego Coello"
+            class="w-20 h-20 rounded-lg bg-white object-cover">
+      
+          <!-- Contenedor derecho -->
+          <div class="flex flex-col w-full space-y-4">
+      
+            <!-- Nombre -->
+            <h3 class="text-lg font-semibold">Ana iglesias</h3>
+      
+            <!-- Número de reseñas -->
+            <p class="text-sm text-red-200"> 3 reseñas</p>
+      
+            <!-- Estrellas + Fecha -->
+            <div class="flex items-center space-x-4 mt-2 ">
+              <!-- Estrellas -->
+              <div class="flex space-x-1 text-white ">
+                <!-- Estrellas SVG rellenas -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+              </div>
+      
+              <!-- Fecha -->
+              <p class="text-sm text-red-200">Hace 1 meses</p>
+            </div>
+      
+            <!-- Caja de reseña -->
+            <div class="bg-white text-black rounded-lg p-4 text-sm leading-relaxed w-full md:w-[625px] ">
+                ✨ Si buscas una experiencia única, esta coctelería es un lugar imprescindible. Me encantó la creatividad
+                de sus cócteles, cada uno con una presentación impecable y sabores perfectamente equilibrados. 🥂✨
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <div class="bg-red-800 text-white rounded-xl p-6 w-full max-w-4xl space-y-4 mt-8">
+        <!-- Contenedor principal: avatar + contenido -->
+        <div class="flex md:items-start md:space-x-6 flex-col md:flex-row space-y-4 md:space-y-0">
+      
+          <!-- Imagen de perfil -->
+          <img src="../img/hombre_Avatar.webp" alt="Diego Coello"
+            class="w-20 h-20 rounded-lg bg-white object-cover">
+      
+          <!-- Contenedor derecho -->
+          <div class="flex flex-col w-full space-y-4">
+      
+            <!-- Nombre -->
+            <h3 class="text-lg font-semibold">Diego Coello</h3>
+      
+            <!-- Número de reseñas -->
+            <p class="text-sm text-red-200">2 reseñas</p>
+      
+            <!-- Estrellas + Fecha -->
+            <div class="flex items-center space-x-4 mt-2 ">
+              <!-- Estrellas -->
+              <div class="flex space-x-1 text-white ">
+                <!-- Estrellas SVG rellenas -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.595-6 5.85 1.416 8.25L12 18.75 4.584 23.85 6 15.6 0 9.75l8.332-1.595z" />
+                </svg>
+              </div>
+      
+              <!-- Fecha -->
+              <p class="text-sm text-red-200">Hace 2 meses</p>
+            </div>
+      
+            <!-- Caja de reseña -->
+            <div class="bg-white text-black rounded-lg p-4 text-sm leading-relaxed w-full md:w-[625px]">
+              ✨ Una coctelería espectacular. Los cócteles son creativos y deliciosos, con una presentación impecable. 
+              El ambiente es acogedor y el servicio, de primera. Sin duda, un lugar al que volveré. 🥂✨
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="bg-red-800 text-white rounded-xl p-6 w-full max-w-4xl space-y-4 mt-8">
         <!-- Perfil + Nombre -->
         <div class="flex items-center space-x-4">
           <!-- Imagen de perfil -->
@@ -269,8 +323,6 @@
           </div>
         </div>
       </div>
-
-
     </div>
 
     <div class="flex justify-center items-center space-x-4 text-red-800 text-lg mt-8">
@@ -303,7 +355,7 @@
     </div>
   </main>
   <footer class="bg-red-800 text-white py-10 px-6">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-x-16 gap-y-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-x-16 gap-y-10">
 
       <!-- Columna 1: Información de la empresa -->
       <div>
