@@ -15,27 +15,26 @@
   <header class="bg-red-800 text-white px-6 py-4 flex justify-between items-center">
     <!-- Logo -->
     <div class="flex items-center">
-        <a href="../html/index.html">
-            <img src="../img/logo.webp" alt="Logo La Cueva del Pirata" class="h-16 md:h-20 rounded-lg shadow-md">
-        </a>
+      <a href="../html/index.html">
+        <img src="../img/logo.webp" alt="Logo La Cueva del Pirata" class="h-16 md:h-20 rounded-lg shadow-md">
+      </a>
     </div>
 
     <!-- Botón de menú hamburguesa -->
     <button id="menu-btn" class="md:hidden focus:outline-none">
-        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
+      <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
     </button>
 
     <!-- Menú de navegación -->
     <nav id="menu" class="hidden absolute top-16 left-0 w-full bg-red-800 text-center md:flex md:static md:w-auto md:space-x-8 md:text-base">
-        <a href="../html/index.html" class="block py-3 md:inline underline underline-offset-4">Inicio</a>
-        <a href="../html/cocteles.html" class="block py-3 md:inline hover:underline">Cócteles</a>
-        <a href="../html/contacto.html" class="block py-3 md:inline hover:underline">Contacto</a>
-        <a href="../html/resenhas.html" class="block py-3 md:inline hover:underline">Reseñas</a>
+      <a href="../html/index.html" class="block py-3 md:inline underline underline-offset-4">Inicio</a>
+      <a href="../html/cocteles.html" class="block py-3 md:inline hover:underline">Cócteles</a>
+      <a href="../html/contacto.html" class="block py-3 md:inline hover:underline">Contacto</a>
+      <a href="../html/resenhas.html" class="block py-3 md:inline hover:underline">Reseñas</a>
     </nav>
-</header>
-
+  </header>
 
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <section class="flex flex-col lg:flex-row items-center justify-between gap-12">
@@ -70,62 +69,63 @@
     </section>
 
     <div class="relative max-w-3xl mx-auto mt-16 border-4 border-red-800 bg-white">
+      <!-- Título del carrusel -->
+      <h2 class="text-center text-xl font-bold text-white bg-red-800 py-3">
+        Fotos del local
+      </h2>
 
-      <!-- Título del carrusel (Barra de color rojo pegada al borde) -->
-<h2 class="text-center text-xl font-bold text-white bg-red-800 py-3">
-  Fotos del local
-</h2>
+      <!-- Contenido con padding -->
+      <div class="p-6">
+        <!-- Carrusel Wrapper -->
+        <div class="overflow-hidden relative">
+          <!-- Carrusel Track -->
+          <div id="carouselTrack" class="flex transition-transform duration-500 ease-in-out">
+            <!-- Slide 1 (Fotos 1 y 2) -->
+            <div class="flex-shrink-0 w-full flex justify-center gap-4">
+              <img src="../img/la-cueva-del-pirata_img623030t0.webp" alt="Foto 1"
+                class="rounded-lg w-full lg:w-1/2 max-w-xs h-48 object-cover shadow" />
+              <img src="../img/La-cueva-del-pirata-discoteca.webp" alt="Foto 2"
+                class="rounded-lg w-full lg:w-1/2 max-w-xs h-48 object-cover shadow hidden lg:block" />
+            </div>
 
-<!-- Contenido con padding -->
-<div class="p-6">
+            <!-- Slide 2 (Fotos 2 y 3) -->
+            <div class="flex-shrink-0 w-full flex justify-center gap-4">
+              <img src="../img/mesas-1.webp" alt="Foto 2"
+                class="rounded-lg w-full lg:w-1/2 max-w-xs h-48 object-cover shadow" />
+              <img src="../img/mesas-2.webp" alt="Foto 3"
+                class="rounded-lg w-full lg:w-1/2 max-w-xs h-48 object-cover shadow hidden lg:block" />
+            </div>
 
-  <!-- Carrusel Wrapper -->
-  <div class="overflow-hidden relative">
+            <!-- Slide 3 (Foto 3) -->
+            <div class="flex-shrink-0 w-full flex justify-center gap-4">
+              <img src="../img/mesas-2.webp" alt="Foto 3"
+                class="rounded-lg w-full lg:w-1/2 max-w-xs h-48 object-cover shadow" />
+            </div>
+          </div>
 
-    <!-- Carrusel Track -->
-    <div id="carouselTrack" class="flex transition-transform duration-500 ease-in-out">
-
-      <!-- Slide 1 -->
-      <div class="flex-shrink-0 w-full flex justify-center gap-8 px-4">
-        <img src="../img/la-cueva-del-pirata_img623030t0.webp" alt="Foto 1"
-          class="rounded-lg w-full max-w-xs h-auto shadow imgCarrusel" />
-        <img src="../img/La-cueva-del-pirata-discoteca.webp" alt="Foto 2"
-          class="rounded-lg w-full max-w-xs h-auto shadow imgCarrusel" />
+          <!-- Indicadores -->
+          <div id="indicators" class="flex justify-center mt-4 space-x-2">
+            <!-- Los indicadores se generan dinámicamente con JavaScript -->
+          </div>
+        </div>
       </div>
 
-      <!-- Slide 2 -->
-      <div class="flex-shrink-0 w-full flex justify-center gap-8 px-4">
-        <img src="../img/mesas-1.webp" alt="Foto 3" class="rounded-lg w-full max-w-xs h-auto shadow imgCarrusel" />
-        <img src="../img/mesas-2.webp" alt="Foto 4" class="rounded-lg w-full max-w-xs h-auto shadow imgCarrusel" />
-      </div>
+      <!-- Botón Anterior -->
+      <button id="prevBtn" aria-label="Anterior"
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-red-300 hover:bg-red-400 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg z-10">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <!-- Botón Siguiente -->
+      <button id="nextBtn" aria-label="Siguiente"
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-red-300 hover:bg-red-400 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg z-10">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
     </div>
-
-    <!-- Indicadores -->
-    <div class="flex justify-center mt-4 space-x-2">
-      <div class="w-8 h-1 bg-red-800 rounded" id="indicator-0"></div>
-      <div class="w-8 h-1 bg-gray-300 rounded" id="indicator-1"></div>
-    </div>
-
-  </div>
-</div>
-
-<!-- Botón Anterior -->
-<button id="prevBtn" aria-label="Anterior"
-  class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-red-300 hover:bg-red-400 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg z-10">
-  <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-  </svg>
-</button>
-
-<!-- Botón Siguiente -->
-<button id="nextBtn" aria-label="Siguiente"
-  class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-red-300 hover:bg-red-400 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg z-10">
-  <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-  </svg>
-</button>
-
-
   </main>
 
   <footer class="bg-red-800 text-white py-10 px-6">
@@ -268,19 +268,33 @@
     const track = document.getElementById('carouselTrack');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
-    const indicators = [
-      document.getElementById('indicator-0'),
-      document.getElementById('indicator-1')
-    ];
+    const indicatorsContainer = document.getElementById('indicators');
 
     let currentSlide = 0;
-    const totalSlides = indicators.length;
+    let totalSlides;
+    let isMobile = window.innerWidth < 1024; 
 
+    // Función para generar los indicadores
+    function generateIndicators() {
+      indicatorsContainer.innerHTML = ''; 
+      totalSlides = isMobile ? 3 : 2; 
+
+      for (let i = 0; i < totalSlides; i++) {
+        const indicator = document.createElement('div');
+        indicator.classList.add('w-8', 'h-1', 'rounded', 'cursor-pointer');
+        indicator.classList.add(i === currentSlide ? 'bg-red-800' : 'bg-gray-300');
+        indicator.addEventListener('click', () => goToSlide(i));
+        indicatorsContainer.appendChild(indicator);
+      }
+    }
+
+    // Función para actualizar el carrusel
     function updateSlide() {
-      const percentage = -(currentSlide * 100);
-      track.style.transform = `translateX(${percentage}%)`;
+      const slideWidth = track.clientWidth / (isMobile ? 1 : 2); 
+      track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 
-      indicators.forEach((indicator, index) => {
+      // Actualiza los indicadores
+      Array.from(indicatorsContainer.children).forEach((indicator, index) => {
         if (index === currentSlide) {
           indicator.classList.remove('bg-gray-300');
           indicator.classList.add('bg-red-800');
@@ -291,11 +305,19 @@
       });
     }
 
+    // Función para ir a una diapositiva específica
+    function goToSlide(slideIndex) {
+      currentSlide = slideIndex;
+      updateSlide();
+    }
+
+    // Función para ir a la diapositiva anterior
     function goToPrev() {
       currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
       updateSlide();
     }
 
+    // Función para ir a la siguiente diapositiva
     function goToNext() {
       currentSlide = (currentSlide + 1) % totalSlides;
       updateSlide();
@@ -305,9 +327,20 @@
     prevBtn.addEventListener('click', goToPrev);
     nextBtn.addEventListener('click', goToNext);
 
-    updateSlide();
+    generateIndicators();
+
+    // Actualizar indicadores al cambiar el tamaño de la pantalla
+    window.addEventListener('resize', () => {
+      const newIsMobile = window.innerWidth < 1024;
+      if (newIsMobile !== isMobile) {
+        isMobile = newIsMobile;
+        generateIndicators();
+        updateSlide();
+      }
+    });
   });
 </script>
+
 
 
 
