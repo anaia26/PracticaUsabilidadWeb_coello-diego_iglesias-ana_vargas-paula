@@ -298,7 +298,7 @@
 
       function updateSlide() {
         const percentage = -(currentSlide * 100);
-        rack.style.transform = `translateX(${percentage}%)`;
+        track.style.transform = `translateX(${percentage}%)`;
 
         indicators.forEach((indicator, index) => {
           if (index === currentSlide) {
