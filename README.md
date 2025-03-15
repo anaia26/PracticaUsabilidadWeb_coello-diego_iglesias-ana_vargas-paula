@@ -14,7 +14,7 @@ Proyecto de una página web responsiva desarrollada con **TailwindCSS**, diseña
 - [Responsive Design](#responsive-design)
 - [Características](#características)
 - [Mejoras Potenciales](#mejoras-potenciales)
-- [Autor](#autor)
+- [Autores](#autor)
 
 ---
 
@@ -95,8 +95,9 @@ El proyecto consiste en una página web que muestra la oferta de cócteles de La
 
 ---
 
-## Autor
+## Autores
 
-**Nombre del desarrollador:**  
-La Cueva del Pirata - Proyecto Frontend  
-Formación: Desarrollo Frontend con TailwindCSS
+**Diego Coello, Ana Iglesias y Paula Vargas**  
+La Cueva del Pirata - Proyecto Frontend de Usabilidad con TailwindCSS  
+Módulo: Diseño de Interfaces Web
+2º CS Desarrollo de Aplicaciones Web, CPR Liceo La Paz, curso 2024-25
