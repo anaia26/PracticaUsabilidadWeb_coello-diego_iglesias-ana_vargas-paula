@@ -14,7 +14,7 @@ Proyecto de una página web responsiva desarrollada con **TailwindCSS**, diseña
 - [Responsive Design](#responsive-design)
 - [Características](#características)
 - [Mejoras Potenciales](#mejoras-potenciales)
-- [Autores](#autor)
+- [Autores](#autores)
 
 ---
 
