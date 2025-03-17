@@ -4,343 +4,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuestionario de Usabilidad – La Cueva del Pirata</title>
+    <title>Cuestionario – La Cueva del Pirata</title>
+    <link rel="icon" type="image/webp" href="../img/logo-cabeza.webp">
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-red-800 text-gray-800 font-sans">
+    <!-- Logo -->
+    <div class="flex items-center justify-center mt-5">
+        <a href="../html/index.html">
+            <img src="../img/logo.webp" alt="Logo La Cueva del Pirata" class="h-16 md:h-20 rounded-lg shadow-md">
+        </a>
+    </div>
     <div class="container mx-auto p-6">
         <!-- Título del cuestionario -->
         <h1 class="text-4xl font-bold text-center mb-6 text-white">Cuestionario de Usabilidad – La Cueva del Pirata</h1>
         <p class="text-lg text-center mb-8 text-white"><strong>Instrucciones:</strong> Por favor, selecciona la
             respuesta que mejor represente tu experiencia con la página web de La Cueva del Pirata.</p>
 
-        <!-- Sección 1: Usabilidad del Sitio Web -->
+        <!-- Sección 1: Datos Demográficos -->
         <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Sección 1: Usabilidad del Sitio Web</h2>
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Sección 1: Datos Demográficos</h2>
             <form>
                 <!-- Pregunta 1 -->
                 <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">1. ¿Qué tan fácil fue encontrar la información sobre los
-                        cócteles en la página?</p>
+                    <p class="text-lg font-medium mb-2">1. ¿Cuál es tu rango de edad?</p>
                     <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta1" value="a" class="mr-2"> a)
-                            Muy fácil</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta1" value="b" class="mr-2"> b)
-                            Fácil</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta1" value="c" class="mr-2"> c)
-                            Regular</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta1" value="d" class="mr-2"> d)
-                            Difícil</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta1" value="a" class="mr-2">
+                            a) 18-24 años</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta1" value="b" class="mr-2">
+                            b) 25-34 años</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta1" value="c" class="mr-2">
+                            c) 35-44 años</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta1" value="d" class="mr-2">
+                            d) 45 años o más</label>
                     </div>
                 </div>
 
                 <!-- Pregunta 2 -->
                 <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">2. ¿Cómo calificarías el diseño del sitio web en relación con la
-                        temática de piratas?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta2" value="a" class="mr-2"> a)
-                            Excelente</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta2" value="b" class="mr-2"> b)
-                            Bueno</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta2" value="c" class="mr-2"> c)
-                            Regular</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta2" value="d" class="mr-2"> d)
-                            Malo</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 3 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">3. ¿Los menús de navegación fueron intuitivos y fáciles de usar?
+                    <p class="text-lg font-medium mb-2">2. ¿Con qué frecuencia visitas bares o lugares de coctelería?
                     </p>
                     <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta3" value="a" class="mr-2"> a)
-                            Totalmente de acuerdo</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta3" value="b" class="mr-2"> b)
-                            De acuerdo</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta3" value="c" class="mr-2"> c)
-                            Neutral</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta3" value="d" class="mr-2"> d)
-                            En desacuerdo</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 4 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">4. ¿Pudiste encontrar fácilmente las valoraciones de los
-                        cócteles?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta4" value="a" class="mr-2"> a)
-                            Sí, sin problemas</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta4" value="b" class="mr-2"> b)
-                            Sí, pero tardé un poco en encontrarlas</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta4" value="c" class="mr-2"> c)
-                            No, me costó trabajo</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta4" value="d" class="mr-2"> d)
-                            No las encontré</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 5 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">5. ¿Cómo calificarías la velocidad de carga del sitio web?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta5" value="a" class="mr-2"> a)
-                            Muy rápida</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta5" value="b" class="mr-2"> b)
-                            Rápida</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta5" value="c" class="mr-2"> c)
-                            Normal</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta5" value="d" class="mr-2"> d)
-                            Lenta</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 6 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">6. ¿El contenido de la página fue claro y fácil de comprender?
-                    </p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta6" value="a" class="mr-2"> a)
-                            Sí, totalmente claro</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta6" value="b" class="mr-2"> b)
-                            Mayormente claro</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta6" value="c" class="mr-2"> c)
-                            Regular</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta6" value="d" class="mr-2"> d)
-                            Confuso</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 7 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">7. ¿Pudiste encontrar fácilmente la sección de categorías?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta7" value="a" class="mr-2"> a)
-                            Sí, inmediatamente</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta7" value="b" class="mr-2"> b)
-                            Sí, pero tardé un poco</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta7" value="c" class="mr-2"> c)
-                            No, me costó trabajo</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta7" value="d" class="mr-2"> d)
-                            No la encontré</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 8 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">8. ¿El proceso de reserva o contacto fue sencillo y sin
-                        complicaciones?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta8" value="a" class="mr-2"> a)
-                            Sí, muy sencillo</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta8" value="b" class="mr-2"> b)
-                            Sí, pero podría mejorar</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta8" value="c" class="mr-2"> c)
-                            Algo complicado</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta8" value="d" class="mr-2"> d)
-                            No lo entendí</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 9 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">9. ¿El sitio web se adapta bien a dispositivos móviles?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta9" value="a" class="mr-2"> a)
-                            Sí, perfectamente</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta9" value="b" class="mr-2"> b)
-                            Sí, pero con algunas fallas</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta9" value="c" class="mr-2"> c)
-                            No del todo</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta9" value="d" class="mr-2"> d)
-                            No, tuve problemas de visualización</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 10 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">10. ¿Los colores y tipografías del sitio web facilitaron la
-                        lectura del contenido?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta10" value="a" class="mr-2">
-                            a) Sí, totalmente</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta10" value="b" class="mr-2">
-                            b) Sí, en su mayoría</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta10" value="c" class="mr-2">
-                            c) Regular</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta10" value="d" class="mr-2">
-                            d) No, dificultaron la lectura</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 11 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">11. ¿El sitio proporciona suficiente información sobre los
-                        ingredientes de los cócteles?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta11" value="a" class="mr-2">
-                            a) Sí, completamente detallada</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta11" value="b" class="mr-2">
-                            b) Sí, pero podría incluir más información</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta11" value="c" class="mr-2">
-                            c) Regular</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta11" value="d" class="mr-2">
-                            d) No, falta mucha información</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 12 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">12. ¿Pudiste encontrar fácilmente la ubicación del bar y su
-                        contacto?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta12" value="a" class="mr-2">
-                            a) Sí, sin problemas</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta12" value="b" class="mr-2">
-                            b) Sí, pero me tomó tiempo</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta12" value="c" class="mr-2">
-                            c) No, me costó trabajo</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta12" value="d" class="mr-2">
-                            d) No los encontré</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 13 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">13. ¿Los elementos visuales (imágenes) mejoraron tu experiencia
-                        en la web?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta13" value="a" class="mr-2">
-                            a) Sí, mucho</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta13" value="b" class="mr-2">
-                            b) Sí, en cierta medida</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta13" value="c" class="mr-2">
-                            c) No hicieron diferencia</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta13" value="d" class="mr-2">
-                            d) No, me parecieron innecesarios</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 14 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">14. ¿Hubo algún elemento del sitio que te resultara confuso o
-                        difícil de entender?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta14" value="a" class="mr-2">
-                            a) No, todo fue claro</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta14" value="b" class="mr-2">
-                            b) Sí, algunos elementos</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta14" value="c" class="mr-2">
-                            c) Sí, varios elementos</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta14" value="d" class="mr-2">
-                            d) Sí, la mayoría del sitio</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 15 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">15. ¿El sitio web te transmitió confianza y profesionalismo?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta15" value="a" class="mr-2">
-                            a) Sí, totalmente</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta15" value="b" class="mr-2">
-                            b) Sí, en gran medida</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta15" value="c" class="mr-2">
-                            c) Regular</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta15" value="d" class="mr-2">
-                            d) No, me generó desconfianza</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 16 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">16. ¿Qué mejoras sugerirías para hacer la navegación más cómoda?
-                    </p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta16" value="a" class="mr-2">
-                            a) Mejorar la organización del contenido</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta16" value="b" class="mr-2">
-                            b) Hacer los menús más intuitivos</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta16" value="c" class="mr-2">
-                            c) Acelerar la velocidad de carga</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta16" value="d" class="mr-2">
-                            d) Mejorar el diseño visual</label>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-        <!-- Sección 2: Datos Demográficos -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Sección 2: Datos Demográficos</h2>
-            <form>
-                <!-- Pregunta 17 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">17. ¿Cuál es tu rango de edad?</p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta17" value="a" class="mr-2">
-                            a) 18-24 años</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta17" value="b" class="mr-2">
-                            b) 25-34 años</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta17" value="c" class="mr-2">
-                            c) 35-44 años</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta17" value="d" class="mr-2">
-                            d) 45 años o más</label>
-                    </div>
-                </div>
-
-                <!-- Pregunta 18 -->
-                <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">18. ¿Con qué frecuencia visitas bares o lugares de coctelería?
-                    </p>
-                    <div class="space-y-2">
-                        <label class="flex items-center"><input type="radio" name="pregunta18" value="a" class="mr-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta2" value="a" class="mr-2">
                             a) Nunca</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta18" value="b" class="mr-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta2" value="b" class="mr-2">
                             b) Rara vez (1 vez cada varios meses)</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta18" value="c" class="mr-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta2" value="c" class="mr-2">
                             c) Ocasionalmente (1-2 veces al mes)</label>
-                        <label class="flex items-center"><input type="radio" name="pregunta18" value="d" class="mr-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta2" value="d" class="mr-2">
                             d) Frecuentemente (una vez por semana o más)</label>
                     </div>
                 </div>
             </form>
         </div>
 
-        <!-- Sección 3: Hábitos de Coctelería -->
+        <!-- Sección 2: Hábitos de Coctelería -->
         <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Sección 3: Hábitos de Coctelería</h2>
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Sección 2: Hábitos de Coctelería</h2>
             <form>
+                <!-- Pregunta 3 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">3. ¿Cuál es tu tipo de cóctel favorito?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta3" value="a" class="mr-2">
+                            a) Mojito</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta3" value="b" class="mr-2">
+                            b) Mai Tai</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta3" value="c" class="mr-2">
+                            c) Piña colada</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta3" value="d" class="mr-2">
+                            d) Daiquiri</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 4 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">4. ¿Qué aspectos valoras más en un bar de coctelería?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta4" value="a" class="mr-2">
+                            a) Ambiente</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta4" value="b" class="mr-2">
+                            b) Calidad de los cócteles</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta4" value="c" class="mr-2">
+                            c) Valoración</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta4" value="d" class="mr-2">
+                            d) Servicio</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Sección 3: Usabilidad del Sitio Web -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Sección 3: Usabilidad del Sitio Web</h2>
+            <form>
+                <!-- Pregunta 5 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">5. ¿Qué tan fácil fue encontrar la información sobre los
+                        cócteles en la página?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta5" value="a" class="mr-2"> a)
+                            Muy fácil</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta5" value="b" class="mr-2"> b)
+                            Fácil</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta5" value="c" class="mr-2"> c)
+                            Regular</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta5" value="d" class="mr-2"> d)
+                            Difícil</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 6 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">6. ¿Cómo calificarías el diseño del sitio web en relación con la
+                        temática de piratas?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta6" value="a" class="mr-2"> a)
+                            Excelente</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta6" value="b" class="mr-2"> b)
+                            Bueno</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta6" value="c" class="mr-2"> c)
+                            Regular</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta6" value="d" class="mr-2"> d)
+                            Malo</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 7 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">7. ¿Los menús de navegación fueron intuitivos y fáciles de usar?
+                    </p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta7" value="a" class="mr-2"> a)
+                            Totalmente de acuerdo</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta7" value="b" class="mr-2"> b)
+                            De acuerdo</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta7" value="c" class="mr-2"> c)
+                            Neutral</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta7" value="d" class="mr-2"> d)
+                            En desacuerdo</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 8 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">8. ¿Pudiste encontrar fácilmente las valoraciones de los
+                        cócteles?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta8" value="a" class="mr-2"> a)
+                            Sí, sin problemas</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta8" value="b" class="mr-2"> b)
+                            Sí, pero tardé un poco en encontrarlas</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta8" value="c" class="mr-2"> c)
+                            No, me costó trabajo</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta8" value="d" class="mr-2"> d)
+                            No las encontré</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 9 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">9. ¿Cómo calificarías la velocidad de carga del sitio web?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta9" value="a" class="mr-2"> a)
+                            Muy rápida</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta9" value="b" class="mr-2"> b)
+                            Rápida</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta9" value="c" class="mr-2"> c)
+                            Normal</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta9" value="d" class="mr-2"> d)
+                            Lenta</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 10 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">10. ¿El contenido de la página fue claro y fácil de comprender?
+                    </p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta10" value="a" class="mr-2">
+                            a)
+                            Sí, totalmente claro</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta10" value="b" class="mr-2">
+                            b)
+                            Mayormente claro</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta10" value="c" class="mr-2">
+                            c)
+                            Regular</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta10" value="d" class="mr-2">
+                            d)
+                            Confuso</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 11 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">11. ¿Pudiste encontrar fácilmente la sección de categorías?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta11" value="a" class="mr-2">
+                            a)
+                            Sí, inmediatamente</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta11" value="b" class="mr-2">
+                            b)
+                            Sí, pero tardé un poco</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta11" value="c" class="mr-2">
+                            c)
+                            No, me costó trabajo</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta11" value="d" class="mr-2">
+                            d)
+                            No la encontré</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 12 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">12. ¿El proceso de reserva o contacto fue sencillo y sin
+                        complicaciones?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta12" value="a" class="mr-2">
+                            a)
+                            Sí, muy sencillo</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta12" value="b" class="mr-2">
+                            b)
+                            Sí, pero podría mejorar</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta12" value="c" class="mr-2">
+                            c)
+                            Algo complicado</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta12" value="d" class="mr-2">
+                            d)
+                            No lo entendí</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 13 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">13. ¿El sitio web se adapta bien a dispositivos móviles?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta13" value="a" class="mr-2">
+                            a)
+                            Sí, perfectamente</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta13" value="b" class="mr-2">
+                            b)
+                            Sí, pero con algunas fallas</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta13" value="c" class="mr-2">
+                            c)
+                            No del todo</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta13" value="d" class="mr-2">
+                            d)
+                            No, tuve problemas de visualización</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 14 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">14. ¿Los colores y tipografías del sitio web facilitaron la
+                        lectura del contenido?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta14" value="a" class="mr-2">
+                            a) Sí, totalmente</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta14" value="b" class="mr-2">
+                            b) Sí, en su mayoría</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta14" value="c" class="mr-2">
+                            c) Regular</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta14" value="d" class="mr-2">
+                            d) No, dificultaron la lectura</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 15 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">15. ¿El sitio proporciona suficiente información sobre los
+                        ingredientes de los cócteles?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta15" value="a" class="mr-2">
+                            a) Sí, completamente detallada</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta15" value="b" class="mr-2">
+                            b) Sí, pero podría incluir más información</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta15" value="c" class="mr-2">
+                            c) Regular</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta15" value="d" class="mr-2">
+                            d) No, falta mucha información</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 16 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">16. ¿Pudiste encontrar fácilmente la ubicación del bar y su
+                        contacto?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta16" value="a" class="mr-2">
+                            a) Sí, sin problemas</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta16" value="b" class="mr-2">
+                            b) Sí, pero me tomó tiempo</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta16" value="c" class="mr-2">
+                            c) No, me costó trabajo</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta16" value="d" class="mr-2">
+                            d) No los encontré</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 17 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">17. ¿Los elementos visuales (imágenes) mejoraron tu experiencia
+                        en la web?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta17" value="a" class="mr-2">
+                            a) Sí, mucho</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta17" value="b" class="mr-2">
+                            b) Sí, en cierta medida</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta17" value="c" class="mr-2">
+                            c) No hicieron diferencia</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta17" value="d" class="mr-2">
+                            d) No, me parecieron innecesarios</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 18 -->
+                <div class="mb-6">
+                    <p class="text-lg font-medium mb-2">18. ¿Hubo algún elemento del sitio que te resultara confuso o
+                        difícil de entender?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="pregunta18" value="a" class="mr-2">
+                            a) No, todo fue claro</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta18" value="b" class="mr-2">
+                            b) Sí, algunos elementos</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta18" value="c" class="mr-2">
+                            c) Sí, varios elementos</label>
+                        <label class="flex items-center"><input type="radio" name="pregunta18" value="d" class="mr-2">
+                            d) Sí, la mayoría del sitio</label>
+                    </div>
+                </div>
+
                 <!-- Pregunta 19 -->
                 <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">19. ¿Cuál es tu tipo de cóctel favorito?</p>
+                    <p class="text-lg font-medium mb-2">19. ¿El sitio web te transmitió confianza y profesionalismo?</p>
                     <div class="space-y-2">
                         <label class="flex items-center"><input type="radio" name="pregunta19" value="a" class="mr-2">
-                            a) Mojito</label>
+                            a) Sí, totalmente</label>
                         <label class="flex items-center"><input type="radio" name="pregunta19" value="b" class="mr-2">
-                            b) Mai Tai</label>
+                            b) Sí, en gran medida</label>
                         <label class="flex items-center"><input type="radio" name="pregunta19" value="c" class="mr-2">
-                            c) Piña colada</label>
+                            c) Regular</label>
                         <label class="flex items-center"><input type="radio" name="pregunta19" value="d" class="mr-2">
-                            d) Daiquiri</label>
+                            d) No, me generó desconfianza</label>
                     </div>
                 </div>
 
                 <!-- Pregunta 20 -->
                 <div class="mb-6">
-                    <p class="text-lg font-medium mb-2">20. ¿Qué aspectos valoras más en un bar de coctelería?</p>
+                    <p class="text-lg font-medium mb-2">20. ¿Qué mejoras sugerirías para hacer la navegación más cómoda?
+                    </p>
                     <div class="space-y-2">
                         <label class="flex items-center"><input type="radio" name="pregunta20" value="a" class="mr-2">
-                            a) Ambiente</label>
+                            a) Mejorar la organización del contenido</label>
                         <label class="flex items-center"><input type="radio" name="pregunta20" value="b" class="mr-2">
-                            b) Calidad de los cócteles</label>
+                            b) Hacer los menús más intuitivos</label>
                         <label class="flex items-center"><input type="radio" name="pregunta20" value="c" class="mr-2">
-                            c) Valoración</label>
+                            c) Acelerar la velocidad de carga</label>
                         <label class="flex items-center"><input type="radio" name="pregunta20" value="d" class="mr-2">
-                            d) Servicio</label>
+                            d) Mejorar el diseño visual</label>
                     </div>
                 </div>
             </form>
