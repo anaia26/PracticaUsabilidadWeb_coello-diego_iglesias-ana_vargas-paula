@@ -68,6 +68,11 @@ El proyecto consiste en una página web que muestra la oferta de cócteles de La
 
 ---
 
+## Usabilidad
+
+- **Cuestionario**: Para mejorar la experiencia del usuario, se ha creado un test de valoración para los usuarios de prueba que incluye preguntas demográficas, preguntas relacionadas con hábitos de coctelería y preguntas de usabilidad del sitio web.
+---
+
 ## Responsive Design
 
 - La página es **Mobile First**, con adaptaciones a resoluciones de tablet y escritorio.
